@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito:wght@700;900&family=Poppins:wght@500&family=Work+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- normalize -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <!-- style -->
+    <link href="./css/style.css" rel="stylesheet" />
+    <title>Plant</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a href="./index.html">
+          <div class="header-logo">
+            <p class="header-logo-text">P</p>
+            <svg class="header-logo-poly" width="36" height="36">
+              <use href="./image/icons.svg#icon-logo"></use>
+            </svg>
+          </div>
+        </a>
+        <div class="header-buttons">
+          <ul class="controls-list">
+            <li class="controls-item">
+              <button class="controls-button" type="button">
+                <svg width="20" height="20">
+                  <use href="./image/icons.svg#icon-search"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="controls-item">
+              <button class="controls-button" type="button">
+                <svg width="20" height="20">
+                  <use href="./image/icons.svg#icon-cart"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+
+          <ul class="auth-list">
+            <li class="auth-item">
+              <button class="auth-button" type="button" data-modal-open>Sign Up</button>
+            </li>
+            <li class="auth-item">
+              <button class="auth-button" type="button">Sign In</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- hero -->
+      <section class="hero">
+        <div class="container hero-container">
+          <img class="hero-img" src="./image/hero.jpg" alt="plant" width="608" height="740" />
+          <div class="hero-content">
+            <h1 class="hero-title">Kembang Flower Mantap</h1>
+            <p class="hero-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s,
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- advantages -->
+      <section class="advantages"></section>
+    </main>
+
+    <!-- backdrop -->
+    <div class="backdrop is-hidden" data-modal data-modal-close>
+      <div class="sing-up-modal">
+        <button class="close-button" type="button" data-modal-close>
+          <svg width="8" height="8">
+            <use href="./image/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
