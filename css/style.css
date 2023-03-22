@@ -49,12 +49,55 @@ img {
   height: auto;
 }
 
+address {
+  font-style: normal;
+}
+
 /* components */
 .container {
   max-width: 1235px;
   margin: 0 auto;
   padding-left: 33px;
   padding-right: 33px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.4;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--secont-back-color);
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-item {
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.footer-link {
+  color: inherit;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
 }
 
 /* utility */
@@ -315,11 +358,6 @@ img {
 }
 
 /* features */
-.features {
-}
-.container {
-}
-
 .features-header {
   display: flex;
   justify-content: space-between;
@@ -371,6 +409,173 @@ img {
   margin-top: 8px;
 
   font-weight: 600;
+}
+
+/* about plant */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.about-info {
+  width: 505px;
+  margin-bottom: 93px;
+  color: var(--section-text-color);
+}
+
+.about-info-title {
+  margin-bottom: 16px;
+}
+
+.about-info-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+/* shop-visit */
+.shop-visit {
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+.shop-visit-container {
+  max-width: 1163px;
+  padding-left: 0;
+  padding-right: 0;
+
+  background-color: #f3f4f6;
+
+  background-image: url('../image/sanni.jpg');
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.shop-visit-info {
+  width: 583px;
+  padding-left: 100px;
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+
+.shop-visit-title {
+  margin-bottom: 32px;
+}
+
+.shop-visit-link {
+  display: inline-block;
+  padding: 10px 42px;
+
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42;
+
+  background-color: var(--accent-color);
+  color: #fafefe;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.shop-visit-link:hover,
+.shop-visit-link:focus {
+  background-color: #156975;
+}
+
+/* Footer */
+.footer {
+  font-family: 'Work Sans';
+  border-top: 1px solid rgba(21, 105, 99, 0.3);
+}
+
+.footer-container {
+  display: flex;
+  gap: 80px;
+  padding-left: 111px;
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
+.footer-address {
+  width: 282px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 24px;
+
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.address-build-name {
+  display: inline-block;
+  margin-bottom: 10px;
+
+  font-style: normal;
+  font-weight: 500;
+}
+
+.address-info {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.53;
+  color: #4f4f4f;
+}
+
+.footer-contact-form {
+  width: 234px;
+}
+
+.footer-input {
+  width: 100%;
+  padding: 8px 0px 8px 13px;
+  margin-bottom: 14px;
+
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: 1.33;
+}
+
+.footer-input::placeholder {
+  color: #000000;
+  opacity: 0.5;
+}
+
+.footer-contact-title {
+  margin-bottom: 14px;
+}
+
+.footer-contact-button {
+  padding: 6px 15px;
+
+  background-color: var(--accent-color);
+  border-radius: 2px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: var(--white-color);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.footer-contact-button:hover,
+.footer-contact-button:focus {
+  background-color: #156975;
 }
 
 /* modal */
