@@ -69,20 +69,185 @@
           <img class="hero-img" src="./image/hero.jpg" alt="plant" width="608" height="740" />
           <div class="hero-content">
             <h1 class="hero-title">Kembang Flower Mantap</h1>
-            <p class="hero-text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s,
-            </p>
+            <div class="hero-text-thumb">
+              <p class="hero-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s,
+              </p>
+            </div>
+
+            <ul class="slider-control-list">
+              <li class="slider-item">
+                <button class="slider-button">
+                  <div class="slider-button-controls left-button">
+                    <svg width="32" height="32">
+                      <use href="./image/icons.svg#icon-arrow-back-outline"></use>
+                    </svg>
+                    <p class="slider-button-name">Previous</p>
+                  </div>
+                  <p class="slider-name">Kaktus Plant</p>
+                </button>
+              </li>
+              <li class="slider-item">
+                <button class="slider-button right-button">
+                  <div class="slider-button-controls">
+                    <svg width="32" height="32">
+                      <use href="./image/icons.svg#icon-arrow-back-outline-2"></use>
+                    </svg>
+                    <p class="slider-button-name right">Next</p>
+                  </div>
+                  <p class="slider-name">Rahasia Plant</p>
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
       <!-- advantages -->
-      <section class="advantages"></section>
+      <section class="advantages">
+        <div class="container">
+          <h2 class="visually-hidden">advantages</h2>
+          <ul class="advantages-list">
+            <li class="advantages-item">
+              <div class="item-header">
+                <svg width="48" height="48">
+                  <use href="./image/icons.svg#icon-dellivery"></use>
+                </svg>
+                <h3 class="advantages-item-title"><span>Fast</span> Delivery</h3>
+              </div>
+              <p class="advantages-itemt-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard
+              </p>
+            </li>
+            <li class="advantages-item">
+              <div class="item-header">
+                <svg width="48" height="48">
+                  <use href="./image/icons.svg#icon-headphones"></use>
+                </svg>
+                <h3 class="advantages-item-title">Great Customer Service</h3>
+              </div>
+              <p class="advantages-itemt-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard
+              </p>
+            </li>
+            <li class="advantages-item">
+              <div class="item-header">
+                <svg width="48" height="48">
+                  <use href="./image/icons.svg#icon-plant"></use>
+                </svg>
+                <h3 class="advantages-item-title"><span>Original</span> Plants</h3>
+              </div>
+              <p class="advantages-itemt-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard
+              </p>
+            </li>
+            <li class="advantages-item">
+              <div class="item-header">
+                <svg width="48" height="48">
+                  <use href="./image/icons.svg#icon-dollar"></use>
+                </svg>
+                <h3 class="advantages-item-title"><span>Affordable</span>Price</h3>
+              </div>
+              <p class="advantages-itemt-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- features -->
+      <section class="features">
+        <div class="container">
+          <div class="features-header">
+            <h2 class="features-title">Featured Plants</h2>
+            <div class="features-filter">
+              <label for="filter" class="visually-hidden">Filter</label>
+              <select id="filter" name="filter">
+                <option value="cheaper">Cheaper First</option>
+                <option value="expensive">Expensive First</option>
+              </select>
+            </div>
+          </div>
+          <ul class="features-list">
+            <li class="features-item">
+              <a class="features-link" href="#">
+                <img src="./image/cactus.jpg" alt="kecubung" class="features-img" />
+                <p class="features-name">Kaktus Plants</p>
+                <span class="features-price">IDR 85.000</span>
+              </a>
+            </li>
+            <li class="features-item">
+              <a class="features-link" href="#">
+                <img src="./image/landak.jpg" alt="kecubung" class="features-img" />
+                <p class="features-name">Landak Plants</p>
+                <span class="features-price">IDR 105.000</span>
+              </a>
+            </li>
+            <li class="features-item">
+              <a class="features-link" href="#">
+                <img src="./image/kecubung.jpg" alt="kecubung" class="features-img" />
+                <p class="features-name">Kecubung Plants</p>
+                <span class="features-price">IDR 85.000</span>
+              </a>
+            </li>
+            <li class="features-item">
+              <a class="features-link" href="#">
+                <img src="./image/kecubung-2.jpg" alt="kecubung" class="features-img" />
+                <p class="features-name">Kecubung Plants</p>
+                <span class="features-price">IDR 85.000</span>
+              </a>
+            </li>
+            <li class="features-item">
+              <a class="features-link" href="#">
+                <img src="./image/kecubung-3.jpg" alt="kecubung" class="features-img" />
+                <p class="features-name">Kecubung Plants</p>
+                <span class="features-price">IDR 85.000</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- about plants -->
+      <section class="about">
+        <div class="container">
+          <div class="about-left">
+            <div class="about-info">
+              <h2 class="about-info-title">Buy more plants, it helps you to be relaxed</h2>
+              <p class="about-info-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida gravida
+                aliquam. Pellentesque et lobortis nisl. Sed et mauris justo. Nulla eu enim non
+                mauris maximus dignissim. Maecenas vitae eros sapien. Quisque pellentesque tempus
+                dignissim.
+              </p>
+            </div>
+            <img
+              class="about-left-image"
+              src="./image/liana.jpg"
+              alt="liana"
+              width="568"
+              height="250"
+            />
+          </div>
+          <img
+            class="about-image"
+            src="./image/jason-leung.jpg"
+            alt="jason plant"
+            width="513"
+            height="610"
+          />
+        </div>
+      </section>
     </main>
 
-    <!-- backdrop -->
-    <div class="backdrop is-hidden" data-modal data-modal-close>
+    <!-- modal -->
+    <div class="backdrop is-hidden" data-modal>
       <div class="sing-up-modal">
         <button class="close-button" type="button" data-modal-close>
           <svg width="8" height="8">
